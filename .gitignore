@@ -1,0 +1,4 @@
+.env
+.venv
+search_response.json
+.vscode
