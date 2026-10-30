@@ -43,6 +43,27 @@ for entry in explore_data["items"]:
     print(total_seconds)
 print(durations)
 print (round(len(durations)))
+handled_ids=set()
+candidates=[]
+for item in search_data["items"]:
+    videos_id=item["id"]["videoId"]
+    if videos_id in handled_ids:
+        continue
+    if videos_id  not in durations:
+        continue
+    handled_ids.add(videos_id)
+    candidates.append({"title":item["snippet"]["title"],
+            "channel":item["snippet"]["channelTitle"],
+            "duration":durations[videos_id],
+            "ID":videos_id
+            })
+print(len(candidates))
+print(candidates[0])
+    
+    
+
+
+    
     
 
            
