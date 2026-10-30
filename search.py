@@ -25,7 +25,6 @@ if response.status_code!=200:
 search_data=response.json()
 with open("search_response.json", "w", encoding="utf-8") as search_response:
     json.dump(search_data,search_response,indent=4,ensure_ascii=False)
-
 for item in search_data["items"]:
     print(item["snippet"]["title"], item["snippet"]["channelTitle"],item["id"]["videoId"]) #getting title,channelname and videoId from the items list from the search_response.json file
 #every run of search.py costs 100 units while explore.py is free

@@ -2,6 +2,7 @@ import json
 import requests
 import os
 import sys
+import isodate
 from dotenv import load_dotenv
 load_dotenv()
 url2="https://www.googleapis.com/youtube/v3/videos"
@@ -17,7 +18,7 @@ video2_ids=[]
 for item in search_data["items"]:
     video2_ids.append(item["id"]["videoId"])
 without_duplication=dict.fromkeys(video2_ids)
-print(without_duplication)   
+#print(without_duplication)   
 params2_dict={
     "part":"contentDetails",
     "id":','.join(without_duplication),
@@ -35,7 +36,13 @@ with open("video_response.json", "w", encoding="utf-8") as out_file:
 durations={}
 for entry in explore_data["items"]:
     print(entry["id"])
-    print(entry["contentDetails"]["duration"])
-
+    duration_str=entry["contentDetails"]["duration"]
+    duration_object=isodate.parse_duration(duration_str)
+    total_seconds=duration_object.total_seconds()
+    durations[entry["id"]]=round(total_seconds)
+    print(total_seconds)
+print(durations)
+print (round(len(durations)))
+    
 
            
