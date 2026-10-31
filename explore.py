@@ -3,6 +3,7 @@ import requests
 import os
 import sys
 import isodate
+import re
 from unidecode import unidecode
 from dotenv import load_dotenv
 load_dotenv()
@@ -72,12 +73,40 @@ def passes_artist_gate(track,candidate):
     artist=clean(track["artist"])
     channel=clean(candidate["channel"])
     title=clean(candidate["title"])
-    if artist in channel or artist in title:
+    if artist in channel or artist in title: # containment: in requires the letters to sit next to each other
         return True
     return False
 for candidate1 in candidates:
     answer=passes_artist_gate(hardcode,candidate1)
     print(candidate1["title"],answer)
+flags_dict={"remix":25,
+            "live":25,
+            "lyric":50,
+            "lyrics":50,
+            "sped up":50,
+            "instrumental":50,
+            "cover":50,
+            "slowed":50,
+}
+def flags_found(title):
+    title=unidecode(title)
+    title=title.lower()
+    title=re.sub(r"[^\w\s]", " ", title)
+    title=" ".join(title.split())
+    title=" "+ title + " "
+    flags_list=[]
+    for flag in flags_dict:
+        flag1=" "+ flag + " "
+        if flag1 in title: #need to look for padded word in title
+            flags_list.append(flag) #unpadded word with the output
+    return flags_list
+for candidate in candidates:
+    print(candidate["title"],flags_found(candidate["title"]))
+print(flags_found("Starboy (Live Remix)"))
+print(flags_found("Alive"))
+
+     
+
 
     
     
