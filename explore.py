@@ -3,6 +3,7 @@ import requests
 import os
 import sys
 import isodate
+from unidecode import unidecode
 from dotenv import load_dotenv
 load_dotenv()
 url2="https://www.googleapis.com/youtube/v3/videos"
@@ -51,7 +52,7 @@ for item in search_data["items"]:
         continue
     if videos_id  not in durations:
         continue
-    handled_ids.add(videos_id)
+    handled_ids.add(videos_id) #add to the set
     candidates.append({"title":item["snippet"]["title"],
             "channel":item["snippet"]["channelTitle"],
             "duration":durations[videos_id],
@@ -59,6 +60,25 @@ for item in search_data["items"]:
             })
 print(len(candidates))
 print(candidates[0])
+hardcode={"title":"Starboy",
+          "artist":"The Weeknd",
+          "duration":230,}
+def clean(text):
+    text=unidecode(text)
+    text=text.lower()
+    text=text.replace("&", "and")
+    return text.replace(" ","")
+def passes_artist_gate(track,candidate):
+    artist=clean(track["artist"])
+    channel=clean(candidate["channel"])
+    title=clean(candidate["title"])
+    if artist in channel or artist in title:
+        return True
+    return False
+for candidate1 in candidates:
+    answer=passes_artist_gate(hardcode,candidate1)
+    print(candidate1["title"],answer)
+
     
     
 
