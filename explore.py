@@ -100,10 +100,18 @@ def flags_found(title):
         if flag1 in title: #need to look for padded word in title
             flags_list.append(flag) #unpadded word with the output
     return flags_list
+#for candidate in candidates:
+ #   print(candidate["title"],flags_found(candidate["title"]))
+def penalty_function(title):
+    found=flags_found(title)
+    penalties=[]
+    for flag3 in found:
+        penalties.append(flags_dict[flag3])
+    return sum(penalties)
 for candidate in candidates:
-    print(candidate["title"],flags_found(candidate["title"]))
-print(flags_found("Starboy (Live Remix)"))
-print(flags_found("Alive"))
+    print(candidate["title"],penalty_function(candidate["title"]))
+    
+
 
      
 
