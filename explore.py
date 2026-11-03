@@ -110,6 +110,21 @@ def penalty_function(title):
     return sum(penalties)
 for candidate in candidates:
     print(candidate["title"],penalty_function(candidate["title"]))
+def cleaned_song_name(title,artist):
+    text=unidecode(title)
+    artist=unidecode(artist)
+    text=re.sub(r"\(.*?\)", " ", text)
+    text=re.sub(r"\[.*?\]", " ", text)
+    text=re.sub(r"\b(?:feat|ft)\b.*", " ", text, flags=re.IGNORECASE)
+    text=re.sub(re.escape(artist), " ", text, flags=re.IGNORECASE)
+    text=text.replace("&", " and ")
+    text=re.sub(r"[^\w\s]", " ", text)
+    return " ".join(text.lower().split())
+for candidate in candidates:
+    print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
+
+           
+           
     
 
 
@@ -121,6 +136,3 @@ for candidate in candidates:
 
 
     
-    
-
-           
