@@ -122,14 +122,23 @@ def cleaned_song_name(title,artist):
     text=re.sub(r"[^\w\s]", " ", text)
     return " ".join(text.lower().split())
 cleaned_spotify_title=cleaned_song_name(hardcode["title"], hardcode["artist"])
+cutoff=50
+def penalty2_function(clean_candidate,cleaned_spotify_title):
+    score1_ratio=fuzz.ratio(clean_candidate,cleaned_spotify_title)
+    if score1_ratio<cutoff:
+        return 0
+    else:
+        return (score1_ratio-cutoff)/(100-cutoff)*45
 for candidate in candidates:
     clean_candidate=cleaned_song_name(candidate["title"], hardcode["artist"])
-    score_ratio=fuzz.ratio(clean_candidate, cleaned_spotify_title)
-    score_partial=fuzz.partial_ratio(clean_candidate, cleaned_spotify_title)
-    score_token=fuzz.token_set_ratio(clean_candidate, cleaned_spotify_title)
-    print(candidate["title"],clean_candidate,score_ratio,score_partial,score_token)
+    score2=penalty2_function(clean_candidate,cleaned_spotify_title)
+    print(candidate["title"],score2)
 #for candidate in candidates:
  #   print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
+
+    
+
+
 
            
            
