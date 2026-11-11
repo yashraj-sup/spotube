@@ -4,6 +4,7 @@ import os
 import sys
 import isodate
 import re
+from rapidfuzz import fuzz
 from unidecode import unidecode
 from dotenv import load_dotenv
 load_dotenv()
@@ -76,9 +77,9 @@ def passes_artist_gate(track,candidate):
     if artist in channel or artist in title: # containment: in requires the letters to sit next to each other
         return True
     return False
-for candidate1 in candidates:
-    answer=passes_artist_gate(hardcode,candidate1)
-    print(candidate1["title"],answer)
+#for candidate1 in candidates:
+ #   answer=passes_artist_gate(hardcode,candidate1)
+  #  print(candidate1["title"],answer)
 flags_dict={"remix":25,
             "live":25,
             "lyric":50,
@@ -108,8 +109,8 @@ def penalty_function(title):
     for flag3 in found:
         penalties.append(flags_dict[flag3])
     return sum(penalties)
-for candidate in candidates:
-    print(candidate["title"],penalty_function(candidate["title"]))
+#for candidate in candidates:
+ #   print(candidate["title"],penalty_function(candidate["title"]))
 def cleaned_song_name(title,artist):
     text=unidecode(title)
     artist=unidecode(artist)
@@ -120,8 +121,15 @@ def cleaned_song_name(title,artist):
     text=text.replace("&", " and ")
     text=re.sub(r"[^\w\s]", " ", text)
     return " ".join(text.lower().split())
+cleaned_spotify_title=cleaned_song_name(hardcode["title"], hardcode["artist"])
 for candidate in candidates:
-    print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
+    clean_candidate=cleaned_song_name(candidate["title"], hardcode["artist"])
+    score_ratio=fuzz.ratio(clean_candidate, cleaned_spotify_title)
+    score_partial=fuzz.partial_ratio(clean_candidate, cleaned_spotify_title)
+    score_token=fuzz.token_set_ratio(clean_candidate, cleaned_spotify_title)
+    print(candidate["title"],clean_candidate,score_ratio,score_partial,score_token)
+#for candidate in candidates:
+ #   print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
 
            
            
