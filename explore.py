@@ -123,16 +123,24 @@ def cleaned_song_name(title,artist):
     return " ".join(text.lower().split())
 cleaned_spotify_title=cleaned_song_name(hardcode["title"], hardcode["artist"])
 cutoff=50
-def penalty2_function(clean_candidate,cleaned_spotify_title):
+def title_penalty_function(clean_candidate,cleaned_spotify_title):
     score1_ratio=fuzz.ratio(clean_candidate,cleaned_spotify_title)
     if score1_ratio<cutoff:
         return 0
     else:
-        return (score1_ratio-cutoff)/(100-cutoff)*45
+        return (score1_ratio-cutoff)/(100-cutoff)*60
+cutoff2=30
+duration_points = 40
+def duration_penalty_function(candidate_duration, spotify_tracks_duration):
+    diff = abs(candidate_duration - spotify_tracks_duration)
+    if diff >= cutoff2:
+        return 0
+    return duration_points * (1 - diff / cutoff2)
 for candidate in candidates:
     clean_candidate=cleaned_song_name(candidate["title"], hardcode["artist"])
-    score2=penalty2_function(clean_candidate,cleaned_spotify_title)
-    print(candidate["title"],score2)
+    score2=title_penalty_function(clean_candidate,cleaned_spotify_title)
+    duration_score = duration_penalty_function(candidate["duration"], hardcode["duration"])
+    print(candidate["title"], score2, duration_score)
 #for candidate in candidates:
  #   print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
 
