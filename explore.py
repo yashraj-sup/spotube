@@ -136,11 +136,28 @@ def duration_penalty_function(candidate_duration, spotify_tracks_duration):
     if diff >= cutoff2:
         return 0
     return duration_points * (1 - diff / cutoff2)
+def candidate_into_single_total(candidate,spotify_track):
+    if  not passes_artist_gate(spotify_track,candidate):
+        return None
+    cleaned_candidate_title=cleaned_song_name(candidate["title"], spotify_track["artist"])
+    title_points=title_penalty_function(cleaned_candidate_title,cleaned_spotify_title)
+    duration_points_earned=duration_penalty_function(candidate["duration"],spotify_track["duration"])
+    flag_penalty=penalty_function(candidate["title"])
+    total_points=max(0,duration_points_earned+title_points-flag_penalty)
+    return total_points
+best_total=None
+best_candidate=None
 for candidate in candidates:
-    clean_candidate=cleaned_song_name(candidate["title"], hardcode["artist"])
-    score2=title_penalty_function(clean_candidate,cleaned_spotify_title)
-    duration_score = duration_penalty_function(candidate["duration"], hardcode["duration"])
-    print(candidate["title"], score2, duration_score)
+    total=candidate_into_single_total(candidate,hardcode)
+    if total is None:
+        continue
+    if best_total is None or total>best_total:
+        best_total=total
+        best_candidate=candidate
+    print(candidate["title"],total)
+print(best_candidate)
+
+    
 #for candidate in candidates:
  #   print(candidate["title"], "->", cleaned_song_name(candidate["title"], hardcode["artist"]))
 
