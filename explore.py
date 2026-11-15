@@ -147,31 +147,34 @@ def candidate_into_single_total(candidate,spotify_track):
     flag_penalty=penalty_function(candidate["title"])
     total_points=max(0,duration_points_earned+title_points-flag_penalty)
     return total_points
-best_total=None
-best_candidate=None
-best_rank=None
 def rank_number(candidate,spotify_track):
     if clean(spotify_track["artist"]) in clean(candidate["channel"]) and "vevo" in clean(candidate["channel"]):
         return 2
     elif clean(spotify_track["artist"]) in clean(candidate["channel"]) and "topic" in clean(candidate["channel"]):
         return 1
     return 0
-for candidate in candidates:
-    total=candidate_into_single_total(candidate,hardcode)
-    if total is None:
-        continue
-    total=round(total,2)
-    rank=rank_number(candidate, hardcode)
-    if best_total is None or total>best_total or (total==best_total and rank>best_rank):
-        best_total=total
-        best_candidate=candidate
-        best_rank=rank
-    print(candidate["title"],total,rank)
-print(best_candidate)
-print(cleaned_spotify_title)
-cleaned_artist=clean(hardcode["artist"])
-cleaned_channel=clean(candidates[0]["channel"])
-cleaned_title=clean(candidates[0]["title"])
+def gives_winner(candidates,spotify_track):
+    best_total=None
+    best_candidate=None
+    best_rank=None
+    for candidate in candidates:
+        total=candidate_into_single_total(candidate,spotify_track)
+        if total is None:
+            continue
+        total=round(total,2)
+        rank=rank_number(candidate, spotify_track)
+        if best_total is None or total>best_total or (total==best_total and rank>best_rank):
+            best_total=total
+            best_candidate=candidate
+            best_rank=rank
+        print(candidate["title"],total,rank)
+    return best_candidate, best_total
+winner, winner_total=gives_winner(candidates,hardcode)
+print(winner, winner_total)
+
+
+
+
 
 
 
