@@ -14,7 +14,7 @@ api_key=os.getenv("youtube_api_key",None)
 if not api_key:
     print("check youtube_api_key in .env file",)
     sys.exit()
-with open("search_response.json", "r", encoding="utf-8") as search_response:
+with open("search_september.json", "r", encoding="utf-8") as search_response:
     search_data=json.load(search_response) # process of deserialization: where json.load reads data directly froma file and converts it into a native pytgon object
 #for item in search_data["items"]:
     #print(item["snippet"]["title"], item["snippet"]["channelTitle"],item["id"]["videoId"]) #getting title,channelname and videoId from the items list from the search_response.json file
@@ -28,15 +28,17 @@ params2_dict={
     "id":','.join(without_duplication),
     "key":api_key,
 }
-video_response=requests.get(url2,params=params2_dict)
-print(video_response.status_code)
-if video_response.status_code!=200:
-    print(video_response.text)
-    sys.exit()
-explore_data=video_response.json()
-print(len(explore_data["items"]))
-with open("video_response.json", "w", encoding="utf-8") as out_file:
-    json.dump(explore_data,out_file,indent=4,ensure_ascii=False)#sterialization:convert a python object into a json-formatted stream and write it directly to a file-like object
+#video_response=requests.get(url2,params=params2_dict)
+#print(video_response.status_code)
+#if video_response.status_code!=200:
+#    print(video_response.text)
+#    sys.exit()
+#explore_data=video_response.json()
+#print(len(explore_data["items"]))
+#with open("video_response.json", "w", encoding="utf-8") as out_file:
+    #json.dump(explore_data,out_file,indent=4,ensure_ascii=False)#sterialization:convert a python object into a json-formatted stream and write it directly to a file-like object
+with open("video_september.json", "r", encoding="utf-8") as video_response:
+    explore_data=json.load(video_response)
 durations={}
 for entry in explore_data["items"]:
     print(entry["id"])
@@ -63,9 +65,9 @@ for item in search_data["items"]:
             })
 print(len(candidates))
 print(candidates[0])
-hardcode={"title":"Je ne parle pas français",
-          "artist":"Namika",
-          "duration":180,}
+hardcode={"title":"September",
+          "artist":"Earth, Wind & Fire",
+          "duration":216,}
 def clean(text):
     text=unidecode(text)
     text=text.lower()
@@ -123,7 +125,7 @@ def cleaned_song_name(title,artist):
     text=text.replace("&", " and ")
     text=re.sub(r"[^\w\s]", " ", text)
     return " ".join(text.lower().split())
-cleaned_spotify_title=cleaned_song_name(hardcode["title"], hardcode["artist"])
+#cleaned_spotify_title=cleaned_song_name(hardcode["title"], hardcode["artist"])
 cutoff=50
 def title_penalty_function(clean_candidate,cleaned_spotify_title):
     score1_ratio=fuzz.ratio(clean_candidate,cleaned_spotify_title)
@@ -142,6 +144,7 @@ def candidate_into_single_total(candidate,spotify_track):
     if  not passes_artist_gate(spotify_track,candidate):
         return None
     cleaned_candidate_title=cleaned_song_name(candidate["title"], spotify_track["artist"])
+    cleaned_spotify_title=cleaned_song_name(spotify_track["title"], spotify_track["artist"])
     title_points=title_penalty_function(cleaned_candidate_title,cleaned_spotify_title)
     duration_points_earned=duration_penalty_function(candidate["duration"],spotify_track["duration"])
     flag_penalty=penalty_function(candidate["title"])
