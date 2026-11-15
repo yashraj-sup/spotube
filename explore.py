@@ -3,6 +3,7 @@ import requests
 import os
 import sys
 import isodate
+import html
 import re
 from rapidfuzz import fuzz
 from unidecode import unidecode
@@ -55,20 +56,21 @@ for item in search_data["items"]:
     if videos_id  not in durations:
         continue
     handled_ids.add(videos_id) #add to the set
-    candidates.append({"title":item["snippet"]["title"],
-            "channel":item["snippet"]["channelTitle"],
+    candidates.append({"title":html.unescape(item["snippet"]["title"]),
+            "channel":html.unescape(item["snippet"]["channelTitle"]),
             "duration":durations[videos_id],
             "ID":videos_id
             })
 print(len(candidates))
 print(candidates[0])
-hardcode={"title":"Starboy",
-          "artist":"The Weeknd",
-          "duration":230,}
+hardcode={"title":"September",
+          "artist":"Earth, Wind & Fire",
+          "duration":216,}
 def clean(text):
     text=unidecode(text)
     text=text.lower()
     text=text.replace("&", "and")
+    text=re.sub(r"[^\w\s]", "", text)
     return text.replace(" ","")
 def passes_artist_gate(track,candidate):
     artist=clean(track["artist"])
@@ -166,6 +168,15 @@ for candidate in candidates:
         best_rank=rank
     print(candidate["title"],total,rank)
 print(best_candidate)
+print(cleaned_spotify_title)
+cleaned_artist=clean(hardcode["artist"])
+cleaned_channel=clean(candidates[0]["channel"])
+cleaned_title=clean(candidates[0]["title"])
+print(cleaned_artist)
+print(cleaned_channel)
+print(cleaned_title)
+print(clean("Earth, Wind & Fire"))
+
 
 
 

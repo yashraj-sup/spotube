@@ -1,0 +1,452 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "qwRfmdjunxPrUyBgq4WhuCEN3gc",
+    "nextPageToken": "CAoQAA",
+    "regionCode": "IN",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 10
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "jy9DnhT4gofELz45Mw9u-1UJxYo",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Gs069dndIYk"
+            },
+            "snippet": {
+                "publishedAt": "2013-01-12T03:44:55Z",
+                "channelId": "UC72IXi6wx33LdltVkdwtLpw",
+                "title": "Earth, Wind &amp; Fire - September (Official HD Video)",
+                "description": "Official HD video for \"September\" by Earth, Wind and Fire Listen to Earth, Wind and Fire: https://EarthWindandFire.lnk.to/listenYD ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Gs069dndIYk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Gs069dndIYk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Gs069dndIYk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Gs069dndIYk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Gs069dndIYk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "EarthWindandFireVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2013-01-12T03:44:55Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "iOT1cYFbV00EeaBelbdWlX2ivMk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "aqZxIL4YE2I"
+            },
+            "snippet": {
+                "publishedAt": "2023-09-29T12:02:35Z",
+                "channelId": "UCNqFDjYTexJDET3rPDrmJKg",
+                "title": "Earth, Wind &amp; Fire - September (Lyrics)",
+                "description": "Follow the official 7clouds playlist on Spotify : http://spoti.fi/2SJsUcZ ​   Earth, Wind & Fire - September (Lyrics) ⏬ Download ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/aqZxIL4YE2I/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/aqZxIL4YE2I/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/aqZxIL4YE2I/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/aqZxIL4YE2I/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/aqZxIL4YE2I/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "7clouds",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-09-29T12:02:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "mq9p1BJWf5wi2F1xBBJyPCeYTUE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "3cKtSlsYVEU"
+            },
+            "snippet": {
+                "publishedAt": "2019-03-21T10:12:45Z",
+                "channelId": "UCdyqvgHHq9NEEfV20lO61jQ",
+                "title": "September",
+                "description": "Provided to YouTube by Columbia/Legacy September · Earth, Wind & Fire The Best Of Earth, Wind & Fire Vol. 1 ℗ 1978 Columbia ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3cKtSlsYVEU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3cKtSlsYVEU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3cKtSlsYVEU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/3cKtSlsYVEU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/3cKtSlsYVEU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Earth, Wind & Fire - Topic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-03-21T10:12:45Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Gr6kDLp5ZNkR1fqmhmFMDzBiuJM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "jf_NKqwklKg"
+            },
+            "snippet": {
+                "publishedAt": "2024-09-23T18:35:06Z",
+                "channelId": "UC-AlofdKECUdhXrbJQZ6iEg",
+                "title": "Earth, Wind &amp; Fire - September",
+                "description": "Earth, Wind & Fire - September » Descargar: (Lyrics): [Verse 1] Do you remember The twenty-first night of September? Love was ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jf_NKqwklKg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jf_NKqwklKg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jf_NKqwklKg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jf_NKqwklKg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/jf_NKqwklKg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "LatinHype",
+                "liveBroadcastContent": "none",
+                "publishTime": "2024-09-23T18:35:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "HZjFnuI6AjmEwgdX6ijrCMn3fSY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "OBM0DO8Xt1c"
+            },
+            "snippet": {
+                "publishedAt": "2023-03-09T10:01:35Z",
+                "channelId": "UCdyqvgHHq9NEEfV20lO61jQ",
+                "title": "September",
+                "description": "Provided to YouTube by Columbia/Legacy September · Earth, Wind & Fire September (sped up + slowed) ℗ 1978 Columbia ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OBM0DO8Xt1c/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OBM0DO8Xt1c/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OBM0DO8Xt1c/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/OBM0DO8Xt1c/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/OBM0DO8Xt1c/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Earth, Wind & Fire - Topic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-09T10:01:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "SWN7W8_mnjWo2zti0PX1k6KhCb0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Rm_9mxZV10U"
+            },
+            "snippet": {
+                "publishedAt": "2016-11-08T07:00:01Z",
+                "channelId": "UC72IXi6wx33LdltVkdwtLpw",
+                "title": "Earth, Wind &amp; Fire - September (Live)",
+                "description": "For more info - http://www.eagle-rock.com/artist/eart... Earth, Wind & Fire are one of the most dynamic and creative funk bands to ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Rm_9mxZV10U/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Rm_9mxZV10U/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Rm_9mxZV10U/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Rm_9mxZV10U/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Rm_9mxZV10U/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "EarthWindandFireVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-11-08T07:00:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "kQY8ATHYasrk_cXLcyUalKmUwrw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "aRNlVNuqDvc"
+            },
+            "snippet": {
+                "publishedAt": "2018-01-16T03:29:56Z",
+                "channelId": "UC5mRQKJ9m20ABLeZM3QMK0g",
+                "title": "Jisoo Yu &amp; David Hart - September by Earth, Wind &amp; Fire",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/aRNlVNuqDvc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/aRNlVNuqDvc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/aRNlVNuqDvc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/aRNlVNuqDvc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/aRNlVNuqDvc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "UNC Moonlight Dance Crew",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-01-16T03:29:56Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "3rJ8G1k1spMeSPRpvJHts9-mxos",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "131OjWrdYwc"
+            },
+            "snippet": {
+                "publishedAt": "2022-09-14T07:00:02Z",
+                "channelId": "UC72IXi6wx33LdltVkdwtLpw",
+                "title": "Earth, Wind &amp; Fire - September (Official Lyric Video)",
+                "description": "Official lyric video for \"September\" by Earth, Wind and Fire Listen to Earth, Wind and Fire: https://EarthWindandFire.lnk.to/listenYD ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/131OjWrdYwc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/131OjWrdYwc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/131OjWrdYwc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/131OjWrdYwc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/131OjWrdYwc/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "EarthWindandFireVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-09-14T07:00:02Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "m8qYWZ-to7JJjnqe1UsBSHcYzjI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "DlSsIKn3HTU"
+            },
+            "snippet": {
+                "publishedAt": "2019-12-13T00:28:41Z",
+                "channelId": "UCxE_ukybv-G2JBsBvm5b8hQ",
+                "title": "Earth, Wind &amp; Fire - September (Lyrics)",
+                "description": "Artist: Earth, Wind & Fire Track: September Released: 1978 Label: Columbia.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/DlSsIKn3HTU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/DlSsIKn3HTU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/DlSsIKn3HTU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/DlSsIKn3HTU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/DlSsIKn3HTU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Timeless Tracks",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-12-13T00:28:41Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "PWzuz7douE7kGgkis3uaY_m7cyg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "8dMpPfCO0rM"
+            },
+            "snippet": {
+                "publishedAt": "2023-10-09T16:26:26Z",
+                "channelId": "UCQqEC0LPfvgFCP8ixrCqADA",
+                "title": "Earth, Wind &amp; Fire - September (Lyrics)",
+                "description": "Follow the official 7clouds playlist on Spotify : http://spoti.fi/2SJsUcZ ​   Earth, Wind & Fire - September (Lyrics) ⏬ Download ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8dMpPfCO0rM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8dMpPfCO0rM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8dMpPfCO0rM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/8dMpPfCO0rM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/8dMpPfCO0rM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "7clouds Rock",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-10-09T16:26:26Z"
+            }
+        }
+    ]
+}

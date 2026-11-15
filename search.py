@@ -12,7 +12,7 @@ if not api_key:
     sys.exit()
 params_dict={
     "part":"snippet",
-    "q":"STARBOY BY THE WEEKND",
+    "q":"September Earth, Wind & Fire",
     "type":"video",
     "maxResults": 10,
     "key":api_key,
