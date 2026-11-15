@@ -63,9 +63,9 @@ for item in search_data["items"]:
             })
 print(len(candidates))
 print(candidates[0])
-hardcode={"title":"September",
-          "artist":"Earth, Wind & Fire",
-          "duration":216,}
+hardcode={"title":"Je ne parle pas français",
+          "artist":"Namika",
+          "duration":180,}
 def clean(text):
     text=unidecode(text)
     text=text.lower()
@@ -172,10 +172,8 @@ print(cleaned_spotify_title)
 cleaned_artist=clean(hardcode["artist"])
 cleaned_channel=clean(candidates[0]["channel"])
 cleaned_title=clean(candidates[0]["title"])
-print(cleaned_artist)
-print(cleaned_channel)
-print(cleaned_title)
-print(clean("Earth, Wind & Fire"))
+
+
 
 
 

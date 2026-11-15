@@ -12,7 +12,7 @@ if not api_key:
     sys.exit()
 params_dict={
     "part":"snippet",
-    "q":"September Earth, Wind & Fire",
+    "q":"Je ne parle pas français Namika",
     "type":"video",
     "maxResults": 10,
     "key":api_key,
