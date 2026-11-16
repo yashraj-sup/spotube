@@ -39,32 +39,29 @@ params2_dict={
     #json.dump(explore_data,out_file,indent=4,ensure_ascii=False)#sterialization:convert a python object into a json-formatted stream and write it directly to a file-like object
 with open("video_september.json", "r", encoding="utf-8") as video_response:
     explore_data=json.load(video_response)
-durations={}
-for entry in explore_data["items"]:
-    print(entry["id"])
-    duration_str=entry["contentDetails"]["duration"]
-    duration_object=isodate.parse_duration(duration_str)
-    total_seconds=duration_object.total_seconds()
-    durations[entry["id"]]=round(total_seconds)
-    print(total_seconds)
-print(durations)
-print (round(len(durations)))
-handled_ids=set()
-candidates=[]
-for item in search_data["items"]:
-    videos_id=item["id"]["videoId"]
-    if videos_id in handled_ids:
-        continue
-    if videos_id  not in durations:
-        continue
-    handled_ids.add(videos_id) #add to the set
-    candidates.append({"title":html.unescape(item["snippet"]["title"]),
+def build_candidates(search_data,explore_data):
+    durations={}
+    for entry in explore_data["items"]:
+        duration_str=entry["contentDetails"]["duration"]
+        duration_object=isodate.parse_duration(duration_str)
+        total_seconds=duration_object.total_seconds()
+        durations[entry["id"]]=round(total_seconds)
+    handled_ids=set()
+    candidates=[]
+    for item in search_data["items"]:
+        videos_id=item["id"]["videoId"]
+        if videos_id in handled_ids:
+           continue
+        if videos_id  not in durations:
+            continue
+        handled_ids.add(videos_id) #add to the set
+        candidates.append({"title":html.unescape(item["snippet"]["title"]),
             "channel":html.unescape(item["snippet"]["channelTitle"]),
             "duration":durations[videos_id],
             "ID":videos_id
             })
-print(len(candidates))
-print(candidates[0])
+    return candidates
+candidates=build_candidates(search_data,explore_data)
 hardcode={"title":"September",
           "artist":"Earth, Wind & Fire",
           "duration":216,}
@@ -174,6 +171,8 @@ def gives_winner(candidates,spotify_track):
     return best_candidate, best_total
 winner, winner_total=gives_winner(candidates,hardcode)
 print(winner, winner_total)
+does_this_work=gives_winner(candidates,hardcode)
+print(does_this_work)
 
 
 
