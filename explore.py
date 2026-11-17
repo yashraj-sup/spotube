@@ -173,6 +173,28 @@ winner, winner_total=gives_winner(candidates,hardcode)
 print(winner, winner_total)
 does_this_work=gives_winner(candidates,hardcode)
 print(does_this_work)
+def search(spotify_track_title,artist):
+    url="https://www.googleapis.com/youtube/v3/search"
+    query_text=spotify_track_title + " " + artist
+    params3_dict={
+        "part":"snippet",
+        "q":query_text,
+        "type":"video",
+        "maxResults": 10,
+        "key":api_key,
+    }
+    response=requests.get(url,params=params3_dict)
+    print(response.status_code)
+    if response.status_code!=200:
+        return None
+    return response.json()
+#calling=search("BumbleBee","Bambee")
+#if calling is None:
+    #print("search failed")
+#else:
+    #print(len(calling["items"]))
+    #with open("search_bumblebee.json", "w", encoding="utf-8") as out_file:
+        #json.dump(calling, out_file, indent=4, ensure_ascii=False)
 
 
 
