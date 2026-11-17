@@ -1,0 +1,432 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "Z31hXNTH2o9pBc8kXdf6xV3agEY",
+    "nextPageToken": "CAoQAA",
+    "regionCode": "IN",
+    "pageInfo": {
+        "totalResults": 205844,
+        "resultsPerPage": 10
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "oxGAqzxWiR3bSnMfCMXm5-sgPbk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "jyFivH9gxz0"
+            },
+            "snippet": {
+                "publishedAt": "2025-08-22T07:04:27Z",
+                "channelId": "UC0WBnp8TXy9S3KRwUiIRtVA",
+                "title": "Bambee - Bumble Bee (Lyrics) &quot;Sweet little bumble bee&quot;",
+                "description": "Bambee - Bumble Bee (Lyrics) https://youtu.be/S9hxL4heX3o?si=-Y3L3cxTXf0ThFTX New Phonk Release ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jyFivH9gxz0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jyFivH9gxz0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jyFivH9gxz0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/jyFivH9gxz0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "MusicLoudz",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-08-22T07:04:27Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "0SGE1-0hinhi8Z6VU2zibtQuFAc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "230Z9WC-7nk"
+            },
+            "snippet": {
+                "publishedAt": "2026-02-13T08:31:44Z",
+                "channelId": "UChHmwMpy16dVmUXkhG8sRSQ",
+                "title": "Bambee - Bumble Bee - Official Lyric Video",
+                "description": "Follow Bambee on: Instagram: https://www.instagram.com/bambee_bumblebee TikTok: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/230Z9WC-7nk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/230Z9WC-7nk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/230Z9WC-7nk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/230Z9WC-7nk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/230Z9WC-7nk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Bambee",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-02-13T08:31:44Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "yWJSoaCaE3fsVAjHhIX-5TJYkJA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Kk2RdVM-Is8"
+            },
+            "snippet": {
+                "publishedAt": "2025-09-17T15:05:09Z",
+                "channelId": "UC2d1jXFBM2Vi0lGKklhNUKw",
+                "title": "BUMBLE BEE - Bambee | Dance Kids | MK Dance ",
+                "description": "mkdancestudio #mkdance #dancecover Đừng quên đăng ký kênh MK Dance Studio và các nền tảng khác của Studio để cập nhật ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Kk2RdVM-Is8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Kk2RdVM-Is8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Kk2RdVM-Is8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Kk2RdVM-Is8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Kk2RdVM-Is8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "MK Dance Studio",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-09-17T15:05:09Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "6q9x-ZvlBRTp6vLhIwAZXXlj-KI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "uvpXkge7eUM"
+            },
+            "snippet": {
+                "publishedAt": "2023-07-14T16:32:07Z",
+                "channelId": "UCEWwVNvRjSRKe-if1x2ADeg",
+                "title": "Bambee - Bumble Bee (Lyrics) || Spotiverse",
+                "description": "music #lyrics #spotify #spotiverse #karaoke #song.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/uvpXkge7eUM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/uvpXkge7eUM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/uvpXkge7eUM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/uvpXkge7eUM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/uvpXkge7eUM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Spotiverse",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-07-14T16:32:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "HwS67cbf6yS4FxkPDLJ8mGjwLEE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "88-imwWK8q8"
+            },
+            "snippet": {
+                "publishedAt": "2007-10-27T05:09:41Z",
+                "channelId": "UC3ET0WSergiaU_QT9OA7Zuw",
+                "title": "bambee bumble bee",
+                "description": "sweet bee little bumble bee by bambee. actors are by shanitaDhoni, youtubepoohsmydude1, youtubeKaptainkrunsh and ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/88-imwWK8q8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/88-imwWK8q8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/88-imwWK8q8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "sunnybumblebee",
+                "liveBroadcastContent": "none",
+                "publishTime": "2007-10-27T05:09:41Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "PAmvzuHw-_NW3mbri2fsu9XKc_Y",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fQsm7eJ_K4I"
+            },
+            "snippet": {
+                "publishedAt": "2025-03-05T09:12:03Z",
+                "channelId": "UCSw3DUEiJekPkqnaificfSw",
+                "title": "BAMBEE - BUMBLE BEE (SLOWED ORIGINAL TIKTOK VERSION)",
+                "description": "Another goodvibes music from tiktok that I enjoyed, but I noticed that there is no release of the full version of this song \"Bambee ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fQsm7eJ_K4I/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fQsm7eJ_K4I/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fQsm7eJ_K4I/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/fQsm7eJ_K4I/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/fQsm7eJ_K4I/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Arvin Britiller",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-03-05T09:12:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "41LfzjHnKLUh06Hw98WKwGGV-9I",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "u9zVhsyV8qc"
+            },
+            "snippet": {
+                "publishedAt": "2023-09-10T15:18:53Z",
+                "channelId": "UC5HUS1c5OK4iES3iRMQnooQ",
+                "title": "Nightcore - Sweet Little Bumblebee (Lyrics)",
+                "description": "Bambee - Bumble Bee ✓ Lyrics in video! ▶️ Previous video: https://youtu.be/5UsQHChmA-4 ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/u9zVhsyV8qc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/u9zVhsyV8qc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/u9zVhsyV8qc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/u9zVhsyV8qc/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    }
+                },
+                "channelTitle": "RubyChan's Nightcore",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-09-10T15:18:53Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "tHObcGbDxCRKz8xRJh5OFmVIDD0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "L8HA6q7TSk4"
+            },
+            "snippet": {
+                "publishedAt": "2025-01-27T14:39:39Z",
+                "channelId": "UCwgFBJhSrb-wUTEeNkosqNw",
+                "title": "Bumblebee Dance (Slow Ver.)",
+                "description": "Copyright Notice All videos on this channel are the exclusive intellectual property of Chanieme. All rights reserved.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/L8HA6q7TSk4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/L8HA6q7TSk4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/L8HA6q7TSk4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/L8HA6q7TSk4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/L8HA6q7TSk4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Chanieme",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-01-27T14:39:39Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "YB8crQpT_wdDZP8fxtUZL_V30HE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ZRfnt0jfywg"
+            },
+            "snippet": {
+                "publishedAt": "2025-09-24T13:31:09Z",
+                "channelId": "UCjeYj81pt8JiF7JlWE7jLpA",
+                "title": "Bumble Bee - Bambee(Lyrics Edit) ft.GirlFriend #shorts #trending #song #lyrics",
+                "description": "bumblebee #bambee #lyrics #edit #audio #audioedit #lyricsedit #trending #viral #virallyrics #trendingshorts #shorts #love #pov ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ZRfnt0jfywg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ZRfnt0jfywg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ZRfnt0jfywg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ZRfnt0jfywg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ZRfnt0jfywg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Era FXX ",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-09-24T13:31:09Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "MJYXJ2m02mKI5HxlqruFuagpY5w",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "iA2anEW_Q24"
+            },
+            "snippet": {
+                "publishedAt": "2023-04-29T11:00:07Z",
+                "channelId": "UCQVJIG4bV7GuIBP1JCKPW_A",
+                "title": "Oshi No Ko「AMV」- Bumble Bee",
+                "description": "Anime: Oshi No Ko, 오시 노 코, おしのこ / ➝ Title: Oshi No Ko 「AMV」- Bumblee Bee ➜Song: Bambee - Bumble Bee. Thanks for ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/iA2anEW_Q24/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/iA2anEW_Q24/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/iA2anEW_Q24/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/iA2anEW_Q24/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/iA2anEW_Q24/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "URZULA AG AMV ウルズラ",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-04-29T11:00:07Z"
+            }
+        }
+    ]
+}

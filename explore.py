@@ -195,6 +195,34 @@ def search(spotify_track_title,artist):
     #print(len(calling["items"]))
     #with open("search_bumblebee.json", "w", encoding="utf-8") as out_file:
         #json.dump(calling, out_file, indent=4, ensure_ascii=False)
+def get_duration(response):
+    video2_ids=[]
+    for item in response["items"]:
+        video2_ids.append(item["id"]["videoId"])
+    without_duplication=dict.fromkeys(video2_ids)
+    params2_dict={
+        "part":"contentDetails",
+        "id":','.join(without_duplication),
+        "key":api_key,
+        }   
+    video_response=requests.get(url2,params=params2_dict)
+    print(video_response.status_code)
+    if video_response.status_code!=200:
+        return None
+    return video_response.json()
+#with open("search_bumblebee.json", "r", encoding="utf-8") as search_file:
+    #search_result=json.load(search_file)
+#pass_into_function=get_duration(search_result)
+#if pass_into_function is None:
+    #print("duration call failed")
+#else:
+    #print(len(pass_into_function["items"]))
+    #with open("video_bumblebee.json", "w", encoding="utf-8") as out_file:
+        #json.dump(pass_into_function, out_file, indent=4, ensure_ascii=False)
+
+
+
+    
 
 
 
