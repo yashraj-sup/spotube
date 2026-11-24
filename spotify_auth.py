@@ -1,5 +1,7 @@
 import os
 import sys
+import json
+import requests
 import webbrowser
 from urllib.parse import urlencode, urlparse, parse_qs
 from dotenv import load_dotenv
@@ -27,3 +29,17 @@ returned_state=result["state"][0]
 if returned_state!=params_dict["state"]:
     print("State mismatch, stopping")
     sys.exit()
+token_data={
+            "grant_type":"authorization_code",
+            "code":code,
+            "redirect_uri":"http://127.0.0.1:8888/callback",
+}
+response=requests.post("https://accounts.spotify.com/api/token", data=token_data, auth=(client_id, client_secret))
+print(response.status_code)
+if response.status_code!=200:
+    print(response.text)
+    sys.exit()
+anything=response.json()
+with open("tokens.json","w", encoding="utf-8") as tokens_file:
+    json.dump(anything,tokens_file, indent=4, ensure_ascii=False)
+print(list(anything.keys()))
