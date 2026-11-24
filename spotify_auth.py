@@ -1,6 +1,7 @@
 import os
+import sys
 import webbrowser
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse, parse_qs
 from dotenv import load_dotenv
 load_dotenv()
 client_id=os.getenv("client_spotify_id", None)
@@ -17,3 +18,12 @@ base_url="https://accounts.spotify.com/authorize"
 authorizing_url=base_url + "?" + urlencode(params_dict)
 print(authorizing_url)
 webbrowser.open(authorizing_url)
+url=input("Paste the callback url:")
+parsed_url=urlparse(url)
+result=parse_qs(parsed_url.query)
+print(result)
+code=result["code"][0]
+returned_state=result["state"][0]
+if returned_state!=params_dict["state"]:
+    print("State mismatch, stopping")
+    sys.exit()
