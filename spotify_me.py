@@ -1,8 +1,7 @@
 import json
 import requests
-with open("tokens.json", "r", encoding="utf-8") as f:
-    tokens=json.load(f)
-access_token=tokens["access_token"]
+from spotify_token import get_access_token
+access_token=get_access_token()
 headers_dict={
         "Authorization":"Bearer " + access_token,
 }
