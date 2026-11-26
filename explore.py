@@ -14,20 +14,9 @@ api_key=os.getenv("youtube_api_key",None)
 if not api_key:
     print("check youtube_api_key in .env file",)
     sys.exit()
-with open("search_september.json", "r", encoding="utf-8") as search_response:
-    search_data=json.load(search_response) # process of deserialization: where json.load reads data directly froma file and converts it into a native pytgon object
 #for item in search_data["items"]:
     #print(item["snippet"]["title"], item["snippet"]["channelTitle"],item["id"]["videoId"]) #getting title,channelname and videoId from the items list from the search_response.json file
-video2_ids=[]
-for item in search_data["items"]:
-    video2_ids.append(item["id"]["videoId"])
-without_duplication=dict.fromkeys(video2_ids)
 #print(without_duplication)   
-params2_dict={
-    "part":"contentDetails",
-    "id":','.join(without_duplication),
-    "key":api_key,
-}
 #video_response=requests.get(url2,params=params2_dict)
 #print(video_response.status_code)
 #if video_response.status_code!=200:
@@ -37,8 +26,6 @@ params2_dict={
 #print(len(explore_data["items"]))
 #with open("video_response.json", "w", encoding="utf-8") as out_file:
     #json.dump(explore_data,out_file,indent=4,ensure_ascii=False)#sterialization:convert a python object into a json-formatted stream and write it directly to a file-like object
-with open("video_september.json", "r", encoding="utf-8") as video_response:
-    explore_data=json.load(video_response)
 def build_candidates(search_data,explore_data):
     durations={}
     for entry in explore_data["items"]:
@@ -61,10 +48,6 @@ def build_candidates(search_data,explore_data):
             "ID":videos_id
             })
     return candidates
-candidates=build_candidates(search_data,explore_data)
-hardcode={"title":"September",
-          "artist":"Earth, Wind & Fire",
-          "duration":216,}
 def clean(text):
     text=unidecode(text)
     text=text.lower()
@@ -169,10 +152,6 @@ def gives_winner(candidates,spotify_track):
             best_rank=rank
         print(candidate["title"],total,rank)
     return best_candidate, best_total
-winner, winner_total=gives_winner(candidates,hardcode)
-print(winner, winner_total)
-does_this_work=gives_winner(candidates,hardcode)
-print(does_this_work)
 def search(spotify_track_title,artist):
     url="https://www.googleapis.com/youtube/v3/search"
     query_text=spotify_track_title + " " + artist
@@ -219,6 +198,31 @@ def get_duration(response):
     #print(len(pass_into_function["items"]))
     #with open("video_bumblebee.json", "w", encoding="utf-8") as out_file:
         #json.dump(pass_into_function, out_file, indent=4, ensure_ascii=False)
+if __name__=="__main__":
+    with open("search_september.json", "r", encoding="utf-8") as search_response:
+        search_data=json.load(search_response) # process of deserialization: where json.load reads data directly froma file and converts it into a native pytgon object
+    video2_ids=[]
+    for item in search_data["items"]:
+        video2_ids.append(item["id"]["videoId"])
+    without_duplication=dict.fromkeys(video2_ids)
+    params2_dict={
+    "part":"contentDetails",
+    "id":','.join(without_duplication),
+    "key":api_key,
+    }
+    with open("video_september.json", "r", encoding="utf-8") as video_response:
+        explore_data=json.load(video_response)
+    candidates=build_candidates(search_data,explore_data)
+    hardcode={"title":"September",
+          "artist":"Earth, Wind & Fire",
+          "duration":216,}
+    winner, winner_total=gives_winner(candidates,hardcode)
+    print(winner, winner_total)
+    does_this_work=gives_winner(candidates,hardcode)
+    print(does_this_work)
+
+
+
 
 
 
