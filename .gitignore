@@ -6,3 +6,4 @@ video_response.json
 .obsidian/
 tokens.json
 tokens_backup.json
+__pycache__/

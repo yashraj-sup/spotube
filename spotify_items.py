@@ -13,6 +13,21 @@ def get_playlist_items(playlist_id,headers):
         print(response.status_code, response.text)
         sys.exit()
     return response.json()["items"]
+def build_spotify_tracks(items):
+    tracks=[]
+    skipped=0
+    for entry in items:
+        song=entry["item"]
+        if song is None:
+            skipped+=1
+            continue
+        tracks.append({"title":song["name"],
+                    "artist":song["artists"][0]["name"],
+                    "duration":round(song["duration_ms"]/1000),
+                    })
+    print(skipped)
+    return tracks
 if __name__=="__main__":
     result=get_playlist_items("2NNJSu3EPmbMlngY2UmC6A", headers_dict)
-    print(result)
+    result2=build_spotify_tracks(result)
+    print(result2)
