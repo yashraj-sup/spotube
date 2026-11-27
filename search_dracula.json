@@ -1,0 +1,472 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "t_r1-v7foF1UyT3Qo2izV0EQeOs",
+    "nextPageToken": "CAoQAA",
+    "regionCode": "IN",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 10
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "eFg6fWHeS8m3gdRqXtLpEmROXgs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "xnP7qKxwzjg"
+            },
+            "snippet": {
+                "publishedAt": "2025-09-26T04:00:06Z",
+                "channelId": "UCEGJtJpwHlpUoMlAOlCWdAA",
+                "title": "Tame Impala - Dracula (Official Video)",
+                "description": "Official video for “Dracula” by Tame Impala out now: https://tameimpala.lnk.to/dracula 'Deadbeat' out now: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/xnP7qKxwzjg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/xnP7qKxwzjg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/xnP7qKxwzjg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/xnP7qKxwzjg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/xnP7qKxwzjg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "tameimpalaVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-09-26T04:00:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "SOKkhlvm-cLi3stYsvmO8JGJ8is",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "HWyzKmXquJk"
+            },
+            "snippet": {
+                "publishedAt": "2025-10-05T17:00:18Z",
+                "channelId": "UC1S3EiYLDrrVc3Ev9rdUE6A",
+                "title": "Tame Impala - Dracula (Lyrics)",
+                "description": "Tame Impala - Dracula (Lyrics) So run from the sun like Dracula Run from the sun like Dracula Check out the remix!",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/HWyzKmXquJk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/HWyzKmXquJk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/HWyzKmXquJk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/HWyzKmXquJk/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/HWyzKmXquJk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "TrendingTracks",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-10-05T17:00:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "yvCYSNbZMogjcnDbJXQsoGgFQ18",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "0UPDBODtxzw"
+            },
+            "snippet": {
+                "publishedAt": "2026-02-06T05:00:02Z",
+                "channelId": "UCEGJtJpwHlpUoMlAOlCWdAA",
+                "title": "Tame Impala - Dracula (JENNIE Remix - Official Lyric Video) ft. JENNIE",
+                "description": "The Official Lyric Video for “Dracula” (Remix) by Tame Impala and JENNIE Listen & Download the remix: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/0UPDBODtxzw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/0UPDBODtxzw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/0UPDBODtxzw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/0UPDBODtxzw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/0UPDBODtxzw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "tameimpalaVEVO",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-02-06T05:00:02Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "vCLZw_MkcjptTcoD_1ArrBmenvA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "cIMdtdYDZRY"
+            },
+            "snippet": {
+                "publishedAt": "2026-04-22T10:30:08Z",
+                "channelId": "UCBR2cEjISn0brrNU8l_FoHA",
+                "title": "Tame Impala, JENNIE - Dracula (Lyrics) #lyricssong #dracula #tameimpala #jennie #englishsong #song",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/cIMdtdYDZRY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/cIMdtdYDZRY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/cIMdtdYDZRY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/cIMdtdYDZRY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/cIMdtdYDZRY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Lyrics Spark",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-04-22T10:30:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "N9Vxfm8O7crdBdpBxBLTlJCAyZI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "OPW1wCwus9w"
+            },
+            "snippet": {
+                "publishedAt": "2026-03-28T14:00:21Z",
+                "channelId": "UCNqFDjYTexJDET3rPDrmJKg",
+                "title": "Tame Impala - Dracula (Lyrics)",
+                "description": "Follow the official 7clouds playlist on Spotify : http://spoti.fi/2SJsUcZ ​   Tame Impala - Dracula (Lyrics) ⏬ Download / Stream: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "fhd": {
+                        "url": "https://i.ytimg.com/vi/OPW1wCwus9w/fhddefault.jpg",
+                        "width": 1920,
+                        "height": 1080
+                    }
+                },
+                "channelTitle": "7clouds",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-03-28T14:00:21Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "zQJFNUuaJ4npaXvk2q6W6_f-MU4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "UvhkjVBBKiU"
+            },
+            "snippet": {
+                "publishedAt": "2026-04-08T13:01:01Z",
+                "channelId": "UCNqFDjYTexJDET3rPDrmJKg",
+                "title": "Tame Impala, JENNIE - Dracula (JENNIE Remix) (Lyrics)",
+                "description": "Follow the official 7clouds playlist on Spotify : http://spoti.fi/2SJsUcZ ​   Tame Impala, JENNIE - Dracula (JENNIE Remix) (Lyrics) ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "fhd": {
+                        "url": "https://i.ytimg.com/vi/UvhkjVBBKiU/fhddefault.jpg",
+                        "width": 1920,
+                        "height": 1080
+                    }
+                },
+                "channelTitle": "7clouds",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-04-08T13:01:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Z6Bk9RiVaMMgBmjVDs7iezVcU58",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fFawxZW2RZs"
+            },
+            "snippet": {
+                "publishedAt": "2026-03-07T09:26:12Z",
+                "channelId": "UCXvmG_L1iqadSabFFajZFAQ",
+                "title": "Tame Impala, JENNIE - Dracula (JENNIE Remix - Music Video)",
+                "description": "jennie and tame impala unofficial music video for their new song Dracula edited by @p8sitions . this video is fan-made and ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fFawxZW2RZs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fFawxZW2RZs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fFawxZW2RZs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/fFawxZW2RZs/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/fFawxZW2RZs/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "TIFFANY ⋆˚࿔",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-03-07T09:26:12Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "_4YVvEvNyrtNJuFDUP1hOcy-xgU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "p3VRA4xWXyw"
+            },
+            "snippet": {
+                "publishedAt": "2025-10-19T22:00:08Z",
+                "channelId": "UClL6dfCaMz9h0y66jHeMiVQ",
+                "title": "Tame Impala - Dracula // Lyrics + Español // Video Oficial",
+                "description": "Ayúdanos con una donación, si deseas: https://paypal.me/brunodolar?country.x=PE&locale.x=es_XC Canal de Respaldo: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/p3VRA4xWXyw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/p3VRA4xWXyw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/p3VRA4xWXyw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/p3VRA4xWXyw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/p3VRA4xWXyw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "BrunoTraductor Official",
+                "liveBroadcastContent": "none",
+                "publishTime": "2025-10-19T22:00:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "zD9NbcV_c9p6rZkQZx9ZcifvOFw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "HpIVBMowfDM"
+            },
+            "snippet": {
+                "publishedAt": "2026-10-29T21:30:23Z",
+                "channelId": "UCd2KNtfphz8HvYzM4pwtHmg",
+                "title": "Tame Impala - &#39;Dracula&#39; (live for Like A Version)",
+                "description": "Tame Impala perform 'Dracula' live for triple j's Like A Version. Subscribe: http://bit.ly/triplejsubscribe Like A Version Interviews: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "uhd": {
+                        "url": "https://i.ytimg.com/vi/HpIVBMowfDM/uhddefault.jpg",
+                        "width": 3840,
+                        "height": 2160
+                    }
+                },
+                "channelTitle": "triple j",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-10-29T21:30:23Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "YczOpSUM8b_sK1hGw_KF4B1I9rI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "F0N7aNy-9tg"
+            },
+            "snippet": {
+                "publishedAt": "2026-07-08T15:00:18Z",
+                "channelId": "UCHuDwbloOT6cmozpGbWnjBQ",
+                "title": "Tame Impala, JENNIE - Dracula (Lyrics)",
+                "description": "Tame Impala, JENNIE - Dracula (Lyrics) ⭐ Download/Stream: Lyrics: Tame Impala, JENNIE - Dracula [Intro: Tame Impala ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "uhd": {
+                        "url": "https://i.ytimg.com/vi/F0N7aNy-9tg/uhddefault.jpg",
+                        "width": 3840,
+                        "height": 2160
+                    }
+                },
+                "channelTitle": "Arcade Music",
+                "liveBroadcastContent": "none",
+                "publishTime": "2026-07-08T15:00:18Z"
+            }
+        }
+    ]
+}
